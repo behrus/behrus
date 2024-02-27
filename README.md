@@ -5,22 +5,22 @@ Docker app for PHP, MySQL, NGINX. REDIS, xDebug, phpMyAdmin and multi stage buil
 
 This docker app provides the installation of PHP, MySQL, Redis, xDebug, phpMyAdmin.
 
-Important is to know that the this docker app provides the ability for installation with multi stage building
+Important is to know that this docker app provides the ability for installation with multi stage building
 
 This means that the development environment is a copy of productin enviroment but with additional installation of xDebug and phpMAdmin. You can see it in `php/Dockerfile`
 
-Multi stage building provides the ability of building different environments thanks which are copy of each other bur with additional or less tools.
+Multi stage building provides the ability of building different environments which are copy of each other but with additional or less settings.
 
 
 # How to run
-
+asdfasdfsd
 Production:
   * Set the environment settings in `.env`
   * Run in your terminal: `docker compose up --build -d`
 
 Development:
   * Set the environment settings in `.env.local`
-  * Simply run the command in your terminal -> `sh ./bin/dev-mode.sh -d` You can place other flags like --build -d to the end of command.
+  * Simply run the command in your terminal -> `sh ./bin/dev-mode.sh -d` You can place also other flags like --build -d at the end of the command.
   * To enable xDebug run the command like this -> `XDEBUG_MODE=debug sh ./bin/dev-mode.sh -d`
   * Check your installation in your browser: `localhost`
   * phpMyAdmin ist available: `http://localhost:4000/`
