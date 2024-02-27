@@ -13,7 +13,7 @@ Multi stage building provides the ability of building different environments whi
 
 
 # How to run
-asdfasdfsd
+
 Production:
   * Set the environment settings in `.env`
   * Run in your terminal: `docker compose up --build -d`
