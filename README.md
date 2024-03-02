@@ -52,5 +52,3 @@ Due to your project could it be necessarey that some changes in Dockerfiles of n
   * To clear images: `docker rmi -f $(docker images -a -q)`
   * To clear volumes: `docker volume rm $(docker volume ls -q)`
 
-
-Disclaimer: This project has been generated on phpdocker.io
